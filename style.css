@@ -1,0 +1,46 @@
+body{
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 2rem;
+  
+}
+.intro{
+  display: flex;  
+  color: white;
+  height: 100vh;
+  background: url('intro.jpg');
+  background-size: cover;
+  
+
+}
+
+.typing{
+  position: relative;
+  margin-left: 10px;
+
+}
+
+.typing::after{
+  content: "";
+  position: absolute;
+  right: -5px;
+  width: 1px;
+  height: 2rem;
+  border-right: 2px solid white;
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
